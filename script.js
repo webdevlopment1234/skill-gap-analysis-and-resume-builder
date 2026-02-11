@@ -61,6 +61,7 @@ function validateStep3() {
   if (skillsSelected === 0) {
     showError(3, "Please select at least one current skill.");
     return false;
+    //npx expo start --tunnel --clear
   }
   showError(3, "");
   return true;
@@ -74,9 +75,9 @@ function analyze() {
     .forEach(s => skills.push(s.value));
 
   const required = {
-    web: ["HTML","CSS","JavaScript","React"],
-    data: ["Python","SQL"],
-    app: ["JavaScript","React"]
+    web: ["HTML", "CSS", "JavaScript", "React"],
+    data: ["Python", "SQL"],
+    app: ["JavaScript", "React"]
   };
 
   const weeklyRoadmap = {
