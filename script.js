@@ -61,7 +61,7 @@ function validateStep3() {
   if (skillsSelected === 0) {
     showError(3, "Please select at least one current skill.");
     return false;
-    //npx expo start --tunnel --clear
+    //npx.cmd expo start --tunnel --clear
   }
   showError(3, "");
   return true;
